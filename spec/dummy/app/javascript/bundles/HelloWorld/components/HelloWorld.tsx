@@ -4,6 +4,7 @@ import type { FunctionComponent } from 'react'
 
 import style from './HelloWorld.module.css'
 import logo from './logo.svg'
+import whatever from '../../../../wat/wat'
 
 export interface Props {
   readonly name: string
@@ -27,7 +28,7 @@ const HelloWorld: FunctionComponent<Props> = (props: Props) => {
   return (
     <>
       <img src={logo} className={style.logo} alt="logo" />
-      <h3>Hello, {name || 'World'}!</h3>
+      <h3>Hello, {name || whatever}!</h3>
       <hr />
       <form>
         <label className={style.bright} htmlFor="name">
